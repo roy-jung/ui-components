@@ -1,0 +1,91 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "includes": [
+      "**",
+      "!**/ncc/**/*.yaml",
+      "!**/*.handlebars",
+      "!**/dist/**",
+      "!**/.next/**",
+      "!**/node_modules/**"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "bracketSpacing": true,
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "bracketSameLine": false,
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "useAnchorContent": "off",
+        "useValidAnchor": "off",
+        "noAriaHiddenOnFocusable": "off",
+        "noAutofocus": "off",
+        "noLabelWithoutControl": "off",
+        "useAriaPropsSupportedByRole": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off",
+        "noForEach": "off",
+        "noExtraBooleanCast": "off",
+        "noBannedTypes": "off"
+      },
+      "correctness": {
+        "noChildrenProp": "off",
+        "noUnusedVariables": "info",
+        "noUnusedImports": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off",
+        "noDelete": "info"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noFallthroughSwitchClause": "info",
+        "noApproximativeNumericConstant": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
+        "useImportType": "off",
+        "useTemplate": "info",
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/*.json"
+      ],
+      "formatter": {
+        "indentWidth": 2
+      }
+    }
+  ]
+}

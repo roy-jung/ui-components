@@ -1,0 +1,16 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  line-height: 1.67;
+  font-size: 1.1rem;
+  li {
+    margin-bottom: 0.6rem;
+  }
+  code {
+    margin: 0 0.2rem;
+    background-color: #e0e0e0;
+  }
+}
